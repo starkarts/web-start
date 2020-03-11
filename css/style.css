@@ -415,7 +415,7 @@ img {
   justify-content: center;
   padding-top: 100px;
   background: #131313 url("../img/hero-bg.jpg") no-repeat center/cover;
-  height: 100vh;
+  height: 59.86rem;
   color: #fff; }
   .hero::before {
     content: '';
