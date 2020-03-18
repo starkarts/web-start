@@ -20,9 +20,10 @@
   &__text
     max-width: 40.785rem
     margin: auto
+    margin-bottom: 4.285rem
     text-align: center
     font-size: 1.428rem
-    line-height: 2.142rem
+    line-height: 2.42rem
     &::before
       content: ''
       display: block
@@ -38,8 +39,19 @@
     flex-wrap: wrap
     max-width: 55rem
     margin: auto
+  &__input-group
+    display: flex
+    flex-direction: column
+    flex-basis: 30%
+  &__label
+    margin-bottom: -7px
+  &__button
+    padding: 1.285rem 4.785rem
   &__policy
     flex-basis: 100%
+    margin-top: 1.2rem
+    &-label 
+      justify-content: center
 .video
   &__play
     position: relative

@@ -350,15 +350,15 @@ template {
   font-size: 1.285rem;
   color: #fff;
   padding: 0.5rem 0; }
-  .input::-webkit-input-placeholder {
+  .input--light::-webkit-input-placeholder {
     color: #fff; }
-  .input::-moz-placeholder {
+  .input--light::-moz-placeholder {
     color: #fff; }
-  .input:-ms-input-placeholder {
+  .input--light:-ms-input-placeholder {
     color: #fff; }
-  .input::-ms-input-placeholder {
+  .input--light::-ms-input-placeholder {
     color: #fff; }
-  .input::placeholder {
+  .input--light::placeholder {
     color: #fff; }
 
 .policy__checkbox {
@@ -652,9 +652,10 @@ img {
 .control__text {
   max-width: 40.785rem;
   margin: auto;
+  margin-bottom: 4.285rem;
   text-align: center;
   font-size: 1.428rem;
-  line-height: 2.142rem; }
+  line-height: 2.42rem; }
   .control__text::before {
     content: '';
     display: block;
@@ -672,8 +673,22 @@ img {
   max-width: 55rem;
   margin: auto; }
 
+.control__input-group {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%; }
+
+.control__label {
+  margin-bottom: -7px; }
+
+.control__button {
+  padding: 1.285rem 4.785rem; }
+
 .control__policy {
-  flex-basis: 100%; }
+  flex-basis: 100%;
+  margin-top: 1.2rem; }
+  .control__policy-label {
+    justify-content: center; }
 
 .video__play {
   position: relative;
@@ -718,6 +733,10 @@ img {
 
 .design__section-title {
   margin-bottom: 2rem; }
+
+.design__title-text {
+  width: 52.93rem;
+  margin: auto; }
 
 .row {
   display: flex;
