@@ -843,6 +843,10 @@ img {
   .footer__menu {
     background-color: #131313;
     padding: 4.285rem 0; }
+  .footer__map {
+    margin: auto;
+    margin-bottom: 4rem;
+    max-width: 66.07rem; }
 
 .modal {
   opacity: 0;

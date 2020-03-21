@@ -48,7 +48,7 @@ $(document).ready(function () {
   new WOW().init();
 
   // Валидация формы
-  $('form').validate({
+  $('.modal__form').validate({
     errorClass: "invalid",
     rules: {
       // строчное правило
@@ -57,7 +57,10 @@ $(document).ready(function () {
         minlength: 2,
         maxlength: 15
       },
-      userPhone: "required",
+      userPhone: {
+        required: true,
+        tel: true
+      },
       // правило-объект (блок)
       userEmail: {
         required: true,
