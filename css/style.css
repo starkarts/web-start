@@ -433,6 +433,7 @@ img {
       color: #fff; }
     .section-title__heading {
       font-family: 'Yeseva One', cursive;
+      font-weight: normal;
       text-transform: uppercase;
       line-height: 138.6%; }
       .section-title__heading--primary {
