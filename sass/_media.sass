@@ -22,6 +22,40 @@
   .card
     &__text
       margin-left: 0
+  .projects
+    padding-bottom: 25rem
+  .section
+    &-title
+      text-align: center
+      &__heading
+        display: block
+        width: 100%
+      &__word
+        display: block
+        &::after
+          display: none
+      &__text
+        text-align: center
+  .swiper
+    &-wrapper
+      &__image
+        padding-top: 2rem
+    &-slide
+      margin-bottom: 2.57rem
+    &-pagination
+      margin-left: 6rem
+    &-button
+      &-prev
+        margin-left: 6rem
+      &-next
+        margin-left: 6rem
+  .control
+    margin-bottom: -6rem
+  .design
+    margin-top: -10rem
+    margin-bottom: -10rem
+    &__card
+      margin-bottom: 5rem
 @media screen and ( max-width: 570px )
   .contacts
     &__phone
@@ -50,8 +84,28 @@
       align-items: start
     &__button
       width: 100% 
+  .swiper
+      &-pagination
+        margin-left: 1rem
+      &-button
+        &-prev
+          margin-left: 1rem
+        &-next
+          margin-left: 1rem
+  .control
+    &__form
+      display: flex
+      flex-direction: column
+      width: 100%
+    &__input
+      &-group
+        margin-bottom: 3rem
 @media screen and ( max-height: 520px )
   .hero 
     &__scroll-down
       display: none
+  .wow
+    animation: none
+
+  
   
