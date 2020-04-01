@@ -4,6 +4,7 @@
   border-radius: 2px
   text-transform: uppercase
   font-size: 0.93rem
+  outline: none
   &:hover
     cursor: pointer
   &--primary
@@ -31,11 +32,13 @@
   &--light
     &::placeholder
       color: $light
+  &:active
+    outline: none
 .policy
   &__checkbox
     opacity: 0
     visibility: hidden
-    &:checked + 
+    &:checked ~ 
       .policy__label
         &::before
           background: $primary Url('../img/check.svg') no-repeat center / 0.8rem
@@ -57,5 +60,6 @@ label
   &.invalid
     color: tomato
 input
+  outline: none
   &.invalid
     border-bottom: 1px solid tomato

@@ -6,14 +6,17 @@
   <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <title>Document</title>
+  <link rel="icon" type="image/png" href="/someimage.png" />
+  <title>Турецкий ремонт в Ростове-на-Дону</title>
 </head>
 <body>
+  <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(61529173, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/61529173" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
   <header class="header">
     <div class="container">
       <div class="menu">
-        <div class="logo menu__logo wow fadeInLeft">Repair Design Project</div>
+        <div class="logo menu__logo wow fadeInLeft"><a href="#" class="logo menu__logo">Repair Design Project</a></div>
         <nav class="nav menu__nav">
           <a href="#" class="nav__item">Главная</a>
           <a href="#" class="nav__item">Проекты</a>
@@ -41,7 +44,7 @@
           <h1 class="title hero__title wow fadeInLeft" data-wow-delay="0.1s">Турецкий ремонт в&nbsp;<span class="title--primary">Ростове-на-дону</span></h1>
           <p class="hero__text wow fadeInLeft" data-wow-delay="0.1s">Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней и 20% от стоимости материалов за счет организации работы</p>
           <button class="button hero__button button--primary wow fadeInLeft" data-wow-delay="0.5s">Рассчитать стоимость</button>
-          <button class="button hero__button button--outline wow fadeInLeft" data-wow-delay="0.5s">Отправить заявку</button>
+          <button class="button hero__button button--outline wow fadeInLeft" data-toggle="modal" data-wow-delay="0.5s">Отправить заявку</button>
         </div>
       </div>
       <!-- /.container -->
@@ -142,7 +145,7 @@
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper swiper-wrapper__image">
                   <!-- Slides -->
-                  <div class="swiper-slide swiper-no-swiping">
+                  <div class="swiper-slide swiper-slide-image swiper-no-swiping">
                     <img src="img/projects/project.jpg" alt="">
                   </div>
                   <div class="swiper-slide swiper-no-swiping">
@@ -173,7 +176,7 @@
         </div>
         <!-- /.section-title -->
         <div class="control__video video">
-          <img src="img/play-icon.svg" alt="play-icon" class="video__play">
+          <a class="video__play" data-fancybox href="https://www.youtube.com/watch?v=RHzzLqJWqHs"><img src="img/play-icon.svg" alt="play-icon"></a>
         </div>
         <!-- /.control__video video -->
         <p class="control__text">
@@ -350,7 +353,7 @@
                 </ul>
                 <!-- /.card__list -->
                 <strong class="card__pricetag">
-                  от 150 руб / м<sup>2</sup> 
+                  150 руб / м<sup>2</sup> 
                 </strong> <!-- /.card__pricetag -->
               </div>
               <!-- /.card__text -->
@@ -384,7 +387,7 @@
                 </ul>
                 <!-- /.card__list -->
                 <strong class="card__pricetag">
-                  от 400 руб / м<sup>2</sup> 
+                  400 руб / м<sup>2</sup> 
                 </strong> 
                 <!-- /.card__pricetag -->
               </div>
@@ -429,7 +432,7 @@
                 </ul>
                 <!-- /.card__list -->
                 <strong class="card__pricetag">
-                  от 900 руб / м<sup>2</sup> 
+                  900 руб / м<sup>2</sup> 
                 </strong> 
                 <!-- /.card__pricetag -->
               </div>
@@ -471,6 +474,10 @@
         <!-- /.form footer__form -->
       </div>
       <!-- /.footer-wrap -->
+      <div class="links footer__links">
+        <h3 class="footer__title-links">Ростов на Дону, торговый центр Plaza <br> прямой телефон +7 (999) 768 32 99</h3>
+        <a href="#" class="footer__links"><img src="img/icon-links.png" alt="email, instagram" class="footer__links-image"></a>
+      </div>
       <div class="map footer__map" id="map">
         <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A260f4da4fd47d2f941ad3f577e4ed26258153049f1118b88790f365f99bbcf2f&amp;width=100%25&amp;height=465&amp;lang=ru_RU&amp;scroll=false"></script>
       </div>
@@ -479,7 +486,7 @@
     <div class="footer__menu">
       <div class="container">
         <div class="menu">
-          <div class="logo menu__logo wow fadeInLeft">Repair Design Project</div>
+          <div class="logo menu__logo wow fadeInLeft"><a href="#" class="logo menu__logo">Repair Design Project</a></div>
           <nav class="nav menu__nav">
             <a href="#" class="nav__item">Главная</a>
             <a href="#" class="nav__item">Проекты</a>
@@ -531,6 +538,7 @@
   <script src="js/wow.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
